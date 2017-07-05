@@ -9,14 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&subset=latin-ext');
   </style>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
-  <div class="wrap-all ">
+  <div class="wrap-all">
     <header class="page-header">
       <div class="container clearfix">
         <a href="/" class="page-logo">
@@ -24,7 +25,7 @@
           </a>
         <nav class="page-nav">
           <ul>
-            <li><a href="">O firmie</a>
+            <li class="nav-parent"><a href="">O firmie</a>
               <ul class="page-nav-sublist">
                 <li><a href="">Aktualności</a></li>
                 <li><a href="">Nasz team </a></li>
@@ -32,22 +33,167 @@
 
               </ul>
             </li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Kontakt</li>
-            </ul>
-          </nav>
-        </div>
-
-</header>
-
-
-
-
-
-
+            <li class="nav-parent"><a href="">Galeria</a></li>
+            <li class="nav-parent"><a href="">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
 
+    </header>
+    <section class="flex-container slider">
+      <button id="next" class="next-slider-btn">&gt</button>
+      <button id="previous" class="previous-slider-btn">&lt</button>
+
+      <ul>
+
+        <li class="slide-1 slider-element">
+
+          <div class="slide-1-image"></div>
+          <div class="main-text">
+            <h1>SIT <span>ON</span> OUR<span> CHAIR</span></h1>
+            <p>Lorem ipsum e velit esse cillum dolore eu, sunt in culpa qui officia deserunt in culpa qui officia d in culpa qui officia d mollit anim id est laborum.</p>
+            <button class="btn">Zobacz wiecej</button>
+          </div>
+        </li>
+
+        <li class="slide-2 slider-element">
+
+          <div class="slide-2-image"></div>
+          <div class="main-text">
+            <h1>SIT <span>ON</span> OUR<span> CHAIR</span></h1>
+            <p>Lorem ipsum e velit esse cillum dolore eu, sunt in culpa qui officia deserunt in culpa qui officia d in culpa qui officia d mollit anim id est laborum.</p>
+            <button class="btn">Zobacz wiecej</button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <section class="gallery flex-container" id="gallery">
+      <div class="gall-box gallBoxEvent">
+        <div class="stripe">
+          <h2>Chair CLAIR</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="gall-box gallBoxEvent">
+        <div class="stripe">
+          <h2>Chair MARGARITA</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="gall-box">
+        <h2>Lorem ipsum</h2>
+        <span class="line"></span>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id natus sint, provident sunt inventore? Labore provident nemo ut inventore atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id.
+        </p>
+      </div>
+    </section>
+
+    <div class="bgcen">
+      <section class="cennik flex-container">
+
+        <div class="title">
+          <h1>CENNIK</h1>
+          <div class="tline"></div>
+        </div>
+
+        <div class="board">
+          <div class="circle1">
+            <div class="circle2"></div>
+          </div>
+          <p> BASIC PLAN </p>
+          <div class="circle3">
+            <span class="num1">85</span>
+            <span class="num2">99</span>
+            <span class="wart">PLN/MSC</span>
+          </div>
+          <ul class="oferts">
+            <li>Zakupy towaru + dowóz</li>
+            <li>Serwis</li>
+          </ul>
+          <button class="btn-cen ">DOŁĄCZ</button>
+        </div>
+
+        <div class="board board-green">
+          <div class="circle1">
+            <div class="circle2"></div>
+          </div>
+          <p> STANDARD PLAN </p>
+          <div class="circle3">
+            <span class="num1">95</span>
+            <span class="num2">99</span>
+            <span class="wart">PLN/MSC</span>
+          </div>
+          <ul class="oferts">
+            <li>Zakupy towaru + dowóz</li>
+            <li>Serwis</li>
+            <li>Gwarancja 5 lat</li>
+          </ul>
+          <button class="btn-green">DOŁĄCZ</button>
+        </div>
+
+        <div class="board">
+          <div class="circle1">
+            <div class="circle2"></div>
+          </div>
+          <p> ADVANCE PLAN </p>
+          <div class="circle3">
+            <span class="num1">211</span>
+            <span class="num2">00</span>
+            <span class="wart">PLN/MSC</span>
+          </div>
+          <ul class="oferts">
+            <li>Zakupy towaru + dowóz</li>
+            <li>Serwis</li>
+            <li>Gwarancja 6 lat</li>
+            <li>Porady projektanta</li>
+          </ul>
+          <button class="btn-cen">DOŁĄCZ</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="flex-container contact2 ">
+      <div class="title2">
+        <h1>KONTAKT</h1>
+        <div class="tline2"></div>
+      </div>
+      <div class="contact">
+        <form>
+          <input type="text" name="name" placeholder="Imię">
+          <input type="text" name="email" placeholder="email">
+          <textarea name="message" placeholder="Wiadomość"></textarea>
+          <input type="button" value="WYŚLIJ">
+        </form>
+
+        <div class="form-images">
+          <img src="img/red_chair.png" alt="Red chair" class="red-chair">
+          <div class="checkbox">
+            <div class="checkbox-img"></div>
+            <p> Zgadzam się na przetwarzanie <br>danych osobowych </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container clearfix">
+      <div class="footer">
+        <span>Copyright 2017 | All Rights Reserved. - Sit On Chair</span>
+        <ul>
+          <li class="final">SIT <span>ON</span> CHAIR</li>
+          <li><img src="img/twitter.png"></li>
+          <li><img src="img/pinterest.png"></li>
+          <li><img src="img/vimeo.png"></li>
+          <li class="final"><img src="img/flickr.png"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
 
 
-    </body>
+
+</body>
+
 </html>
